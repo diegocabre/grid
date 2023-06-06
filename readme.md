@@ -1,0 +1,1 @@
+Resolución usada de 1920x1080

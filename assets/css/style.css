@@ -1,0 +1,161 @@
+body {
+    font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    grid-area: header;
+    background-color: black;
+    min-height: auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid green;
+}
+
+.header__imagen {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    margin-left: 2rem;
+}
+
+.header__imagen img {
+    height: 6rem;
+    width: 6rem;
+}
+
+.header__iconos {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 20px;
+    margin-right: 2rem;
+
+}
+
+.header__iconos a {
+    color: white;
+    text-align: center;
+}
+
+.header__iconos p {
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+menu {
+    margin: 0;
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    border-right: 1px solid green;
+    background-color: rgb(176, 170, 149);
+}
+
+.menu__titulo h1 {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 500px;
+    font-size: 20px;
+}
+
+.menu__titulo p {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 500px;
+    font-size: 20px;
+}
+
+.menu__clasificacion {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+.menu__clasificacion div {
+    display: flex;
+}
+
+.menu__clasificacion__cantidad {
+    margin-left: 20px;
+    color: green;
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+main {
+    margin-top: 20px;
+    margin-left: 30px;
+    display: grid;
+    grid-area: main;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    background-image: url("../imgs/ECOLOGIA\ COLABORATIVA\ NEGRO.png");
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+
+.card__titulo h1 {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 500px;
+    font-size: 20px;
+}
+
+.card__header img {
+    margin-top: 10px;
+    height: 300px;
+    width: 280px;
+}
+
+.card__footer,
+.btn {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    background-color: green;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-top: 1px solid green;
+}
+.contenedor__footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor__footer, .footer__titulo{
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+.footer__footer{
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    justify-content: center;
+}
+
+.container-general {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "menu main main"
+        "footer footer footer";
+}
